@@ -16,7 +16,6 @@ jobs:
       with:
         node-version: '14'
     - run: npm install
-    - run: npm run build
     - name: Deploy to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}

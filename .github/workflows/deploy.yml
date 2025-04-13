@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Or '18' if your app needs it
+          node-version: '14'  # or 18 if you're using newer node
 
       - name: Install dependencies
         run: npm install
@@ -25,5 +25,5 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: "my-ci-app" # Replace with your actual Heroku app name
-          heroku_email: "liparteliani.giorgi@kiu.edu.ge" # Replace with your Heroku account email
+          heroku_app_name: "my-ci-app"
+          heroku_email: "liparteliani.giorgi@kiu.edu.ge"

@@ -23,5 +23,8 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: "my-ci-app" # change if your Heroku app is named differently
-        heroku_email: liparteliani.giorgi@kiu.edu.ge # use your Heroku login email
+        heroku_app_name: "my-ci-app"
+        heroku_email: "liparteliani.giorgi@kiu.edu.ge"
+        usedocker: false
+      env:
+        CI: false

@@ -1,5 +1,5 @@
-import { expect as _expect } from 'chai';
-const expect = _expect;
+import chai from 'chai';
+const expect = chai.expect;
 
 
 describe('GET /hello', () => {

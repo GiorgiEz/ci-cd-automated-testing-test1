@@ -24,4 +24,4 @@ jobs:
       with:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: "my-ci-app" # change if your Heroku app is named differently
-        heroku_email: your-email@example.com # use your Heroku login email
+        heroku_email: liparteliani.giorgi@kiu.edu.ge # use your Heroku login email
